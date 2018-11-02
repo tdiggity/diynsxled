@@ -12,7 +12,7 @@
 #endif
 
 // Data output pins
-#define PASSENGER_MATRIX_PIN  6   // passenger side
+#define PASSENGER_MATRIX_PIN  5   // passenger side
 
 // Opto-isolator inputs
 #define OPTO_IN_PARKING       9   // parking
