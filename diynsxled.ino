@@ -108,6 +108,11 @@ void resetReverse() {
 void setTurnSignal(int brightness) {
   passenger_matrix.fillRect(48, 0, 5, 8, passenger_matrix.Color(brightness, 0, 0));
   passenger_matrix.fillRect(56, 0, 8, 8, passenger_matrix.Color(brightness, 0, 0));
+  // round the corners
+  passenger_matrix.drawPixel(48, 0, BLACK);
+  passenger_matrix.drawPixel(48, 7, BLACK);
+  passenger_matrix.drawPixel(64, 0, BLACK);
+  passenger_matrix.drawPixel(64, 7, BLACK);
 }
 
 void resetTurnSignal() {
