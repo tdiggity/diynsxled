@@ -28,6 +28,12 @@
 #define WHITE    0xFFFA
 #define BLUE     0x001F
 
+// brightness_levels
+#define BRAKE_BRIGHTNESS    220
+#define PARKING_BRIGHTNESS  125
+#define TS_BRIGHTNESS       220
+#define REVERSE_BRIGHTNESS  125
+
 // default state
 int pinState_passenger_ts = 0;
 int pinState_reverse = 0;
@@ -63,23 +69,23 @@ void loop() {
   // parking and brake lights
   // brake lights take priority over parking lights.
   if (pinState_brake == 1) {
-    setBrakeMatrix(240);
+    setBrakeMatrix(BRAKE_BRIGHTNESS);
   } else if (pinState_parking == 1) {
-    setBrakeMatrix(150);
+    setParkingMatrix(PARKING_BRIGHTNESS);
   } else {
     resetBrakes();
   }
 
   //reverse lights
   if (pinState_reverse == 1) {
-    setReverse(150);
+    setReverse(REVERSE_BRIGHTNESS);
   } else {
     resetReverse();
   }
 
   //left turnsignal
   if (pinState_passenger_ts == 1) {
-    setTurnSignal(200);
+    setTurnSignal(TS_BRIGHTNESS);
   } else {
     resetTurnSignal();
   }
@@ -88,6 +94,13 @@ void loop() {
 }
 
 void setBrakeMatrix(int brightness) {
+  // remove first one to match oem
+  //passenger_matrix.fillRoundRect(8,  0, 12, 8, 1, passenger_matrix.Color(brightness, 0, 0));
+  passenger_matrix.fillRoundRect(22, 0, 12, 8, 1, passenger_matrix.Color(brightness, 0, 0));
+  passenger_matrix.fillRoundRect(36, 0, 12, 8, 1, passenger_matrix.Color(brightness, 0, 0));
+}
+
+void setParkingMatrix(int brightness) {
   passenger_matrix.fillRoundRect(8,  0, 12, 8, 1, passenger_matrix.Color(brightness, 0, 0));
   passenger_matrix.fillRoundRect(22, 0, 12, 8, 1, passenger_matrix.Color(brightness, 0, 0));
   passenger_matrix.fillRoundRect(36, 0, 12, 8, 1, passenger_matrix.Color(brightness, 0, 0));
@@ -111,8 +124,8 @@ void setTurnSignal(int brightness) {
   // round the corners
   passenger_matrix.drawPixel(48, 0, BLACK);
   passenger_matrix.drawPixel(48, 7, BLACK);
-  passenger_matrix.drawPixel(64, 0, BLACK);
-  passenger_matrix.drawPixel(64, 7, BLACK);
+  passenger_matrix.drawPixel(63, 0, BLACK);
+  passenger_matrix.drawPixel(63, 7, BLACK);
 }
 
 void resetTurnSignal() {
