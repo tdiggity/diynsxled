@@ -15,10 +15,10 @@
 #define PASSENGER_MATRIX_PIN  5   // passenger side
 
 // Opto-isolator inputs
-#define OPTO_IN_PARKING       9   // parking
-#define OPTO_IN_BRAKES        10  // brakes
-#define OPTO_IN_REVERSE       11  // reverse
-#define OPTO_IN_PASSENGER_TS  12  // passenger turn signal
+#define OPTO_IN_PARKING       7   // parking
+#define OPTO_IN_BRAKES        8  // brakes
+#define OPTO_IN_REVERSE       9  // reverse
+#define OPTO_IN_PASSENGER_TS  10  // passenger turn signal
 
 // Color definitions - only used for black because you can't set 
 // brightness on these without changing them all. 
