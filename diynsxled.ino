@@ -54,6 +54,7 @@ void setup() {
   pinMode(OPTO_IN_BRAKES,       INPUT_PULLUP);
   pinMode(OPTO_IN_REVERSE,      INPUT_PULLUP);
   pinMode(OPTO_IN_PASSENGER_TS, INPUT_PULLUP);
+  pinMode(LED_BUILTIN,          OUTPUT);        // turn on if there's an error
   //Serial.begin(115200);
   Serial.println("starting");
 }
@@ -104,7 +105,7 @@ void loop() {
 void setLeds(boolean brakesOn, boolean parkingOn, boolean reverseOn, boolean turnsignalOn, 
               int pin) {
 
-  unsigned long StartTime = millis();
+  unsigned long startTime = millis();
   // Matrix objects
   Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(
                                 8, 8, // pixel width/height per matrix
@@ -148,8 +149,13 @@ void setLeds(boolean brakesOn, boolean parkingOn, boolean reverseOn, boolean tur
   Serial.print(pin);
   Serial.print(" Matrix: freeMemory()=");
   Serial.print(freeMemory());
-  unsigned long CurrentTime = millis();
-  unsigned long ElapsedTime = CurrentTime - StartTime;
+  unsigned long currentTime = millis();
+  unsigned long elapsedTime = currentTime - startTime;
   Serial.print("\t Time to calculate: ");
-  Serial.println(ElapsedTime);
+  Serial.println(elapsedTime);
+
+  // if it takes more than 100ms to calculate what leds to show, then turn on the led!
+  if (elapsedTime > 100) {
+    digitalWrite(LED_BUILTIN, HIGH);
+  }
 }
