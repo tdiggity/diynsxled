@@ -20,8 +20,8 @@
 #define OPTO_IN_PARKING       7   // parking
 #define OPTO_IN_BRAKES        8  // brakes
 #define OPTO_IN_REVERSE       9  // reverse
-#define OPTO_IN_PASSENGER_TS  10  // passenger turn signal
-// driver side TS == 11
+#define OPTO_IN_PASSENGER_TS  11  // passenger turn signal
+// driver side TS == 10
 
 // Color definitions - only used for black because you can't set
 // brightness on these without changing them all.
