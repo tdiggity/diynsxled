@@ -18,10 +18,10 @@
 
 // Opto-isolator inputs
 #define OPTO_IN_PARKING       7   // parking
-#define OPTO_IN_BRAKES        8  // brakes
-#define OPTO_IN_REVERSE       9  // reverse
+#define OPTO_IN_BRAKES        8   // brakes
+#define OPTO_IN_REVERSE       9   // reverse
+#define OPTO_IN_DRIVER_TS     10  // driver turn signal
 #define OPTO_IN_PASSENGER_TS  11  // passenger turn signal
-// driver side TS == 10
 
 // Color definitions - only used for black because you can't set
 // brightness on these without changing them all.
@@ -38,6 +38,7 @@
 #define REVERSE_BRIGHTNESS  125
 
 // default state of optocoupler inputs
+int pinState_driver_ts = 0;
 int pinState_passenger_ts = 0;
 int pinState_reverse = 0;
 int pinState_parking = 0;
@@ -46,13 +47,15 @@ int pinState_brake = 0;
 // for determining what leds to turn on
 boolean brakesOn = false;
 boolean parkingOn = false;
-boolean turnsignalOn = false;
+boolean driverTurnsignalOn = false;
+boolean passengerTurnsignalOn = false;
 boolean reverseOn = false;
 
 void setup() {
   pinMode(OPTO_IN_PARKING,      INPUT_PULLUP);
   pinMode(OPTO_IN_BRAKES,       INPUT_PULLUP);
   pinMode(OPTO_IN_REVERSE,      INPUT_PULLUP);
+  pinMode(OPTO_IN_DRIVER_TS,    INPUT_PULLUP);
   pinMode(OPTO_IN_PASSENGER_TS, INPUT_PULLUP);
   pinMode(LED_BUILTIN,          OUTPUT);        // turn on if there's an error
   //Serial.begin(115200);
@@ -64,6 +67,7 @@ void loop() {
   pinState_parking      = digitalRead(OPTO_IN_PARKING);
   pinState_brake        = digitalRead(OPTO_IN_BRAKES);
   pinState_reverse      = digitalRead(OPTO_IN_REVERSE);
+  pinState_driver_ts    = digitalRead(OPTO_IN_DRIVER_TS);
   pinState_passenger_ts = digitalRead(OPTO_IN_PASSENGER_TS);
   delay(1); // delay in between reads for stability
 
@@ -90,16 +94,24 @@ void loop() {
     reverseOn = false;
   }
 
+  //right turnsignal
+  if (pinState_driver_ts == 1) {
+    driverTurnsignalOn = true;
+  } else {
+    driverTurnsignalOn = false;
+  }
+  
   //left turnsignal
   if (pinState_passenger_ts == 1) {
-    turnsignalOn = true;
+    passengerTurnsignalOn = true;
   } else {
-    turnsignalOn = false;
+    passengerTurnsignalOn = false;
   }
 
+
   // we do it this way because there isn't enough memory if you make the neopixels global.
-  setLeds(brakesOn, parkingOn, reverseOn, turnsignalOn, PASSENGER_MATRIX_PIN);
-  setLeds(brakesOn, parkingOn, reverseOn, turnsignalOn, DRIVER_MATRIX_PIN);
+  setLeds(brakesOn, parkingOn, reverseOn, passengerTurnsignalOn, PASSENGER_MATRIX_PIN);
+  setLeds(brakesOn, parkingOn, reverseOn, driverTurnsignalOn, DRIVER_MATRIX_PIN);
 }
 
 void setLeds(boolean brakesOn, boolean parkingOn, boolean reverseOn, boolean turnsignalOn, 
