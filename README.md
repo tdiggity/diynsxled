@@ -96,7 +96,24 @@ The parts are easy to print. However, you should use ABS. PETG might work, but p
 # Opening up your tail lights
 Search google for opening up your tail light housing
 
-# PCB and Soldering
+# LED Panel Prep
+### soldering
+Solder the two 3-pin 2.54mm terminals to each panel. 
+tbd - image
+
+### panel orientation and prep
+The order of the panels goes from reverse light to brake lights to turn signals.
+1 reverse light panels
+5 brake lights panels
+1 turn signal panels
+
+For the 5 brake light panels, you need to glue the ends together. Each panel has an input terminal and output terminal. You want to glue them together so that the output terminal of one panel is next to the input terminal of another. 
+
+tbd see image
+
+
+
+# PCB Soldering
 
 The holes will guide you. If it doesn't fit, you have the wrong part. 
 
