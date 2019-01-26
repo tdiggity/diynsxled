@@ -100,11 +100,16 @@ These connectors connect to the OEM connectors for a really clean install. The o
 |  2 pin HD 090  Male Connector | 4 | Optional | (voltage drop) |
 
 
-# 3D printed parts
-The parts are easy to print. However, you should use ABS. PETG might work, but probably not worth the risk. 
-
 # Opening up your tail lights
-Search google for opening up your tail light housing
+Search google for opening up your tail light housing. You'll need to remove the gasket and electrical wiring and brake lamp detector box. 
+
+# Tail Light Prep
+You need to make two cuts to your tail lights
+1. In the brake light area, there is a strip of plastic that comes flush to the rest of the light. This needs to be cut down. 
+2. Next to the strip that you just cut, you'll need to make a small hole for the screw terminal to fit through. Save this step for when you test fit the 3d printed brackets and leds. 
+
+tbd - include images of cuts
+
 
 # LED Panel Prep
 ### soldering
@@ -157,6 +162,12 @@ tbd
 tbd 
 ## Car to PCB
 tbd
+
+
+# Put 3D printed parts in tail lights
+Test mount the 3d printed brackets in the tail light with the led panels. If everything fits, first glue the 3d printed brackets to the tail lights with some superglue and/or hot glue. Once that sets, use hotglue on the tabs and attach the led panels. Super glue and hot glue don't conduct electricity.
+
+Tip: Ensure that the brackets are flush with the border of the tail lights. Hot glue sets quickly enough for you to get them  lined up well. 
 
 # Loading the arduino code
 For testing - open the test file in the test/ folder and upload it using the arduino IDE. 
