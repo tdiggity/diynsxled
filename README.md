@@ -96,7 +96,7 @@ These connectors connect to the OEM connectors for a really clean install. The o
 |  HD 090-6 Female | 1 |  | (OEM brake lamp defeat) |
 |  3 pin HD 090  Female Connector | 6 | Optional | (data lines) |
 |  3 pin HD 090  Male Connector | 6 | Optional | (data lines) |
-|  2 pin HD 090  Female Connector  4  | Optional | (power lines) (same as TS) (voltage drop) |
+|  2 pin HD 090  Female Connector | 4 | Optional | (power lines) (same as TS) (voltage drop) |
 |  2 pin HD 090  Male Connector | 4 | Optional | (voltage drop) |
 
 
