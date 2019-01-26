@@ -6,7 +6,7 @@ DIY LEDS for your NSX
 1. A 3D printer is required to print the brackets and enclosure
 2. A custom PCB can be made for about $30 from www.jlcpcb.com
 3. [Install Arduino IDE](https://www.arduino.cc/en/Guide/HomePage)
-4. Comfortable soldering with beginner skills.
+4. Some soldering experience, or watch a few youtube videos first :)
 5. Read this guide three times or more. There's a lot of info and if you're confused, open an issue above and I will try to help you out.
 
 # Risks
