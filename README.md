@@ -15,8 +15,7 @@ Playing with high amperage is dangerous! Both tail lights on at full red brightn
 
 # Reading (optional)
 * [NeoPixels UberGuide](https://learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels)
-* [Arduino bootloader](https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader/all)
-* [Loading a bootloader](https://learn.sparkfun.com/tutorials/pocket-avr-programmer-hookup-guide/all)
+* [Arduino bootloader](https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader/all) for instant start up time.
 
 # Components
 
