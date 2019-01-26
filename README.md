@@ -111,6 +111,11 @@ You need to make these cuts to your tail lights. They are not visible if you dec
 3. Reverse light area, make two cuts so let the led panel sit flush.
 tbd - include images of cuts
 
+Next:
+1. Remove the reflectors in the brake, reverse, and turnsignal areas.
+2. You can keep all the diffusers.
+3. you will not reuse the inner clear panel that is on the brake lamp area.
+
 
 # LED Panel Prep
 ### soldering
