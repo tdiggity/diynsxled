@@ -5,7 +5,7 @@ DIY LEDS for your NSX
 # Pre-requisites
 1. A 3D printer is required to print the brackets and enclosure
 2. A custom PCB can be made for about $30 from www.jlcpcb.com
-3. Familiarize yourself with using the Arduino IDE
+3. [Install Arduino IDE](https://www.arduino.cc/en/Guide/HomePage)
 4. Comfortable soldering with beginner skills.
 
 # Risks
@@ -15,8 +15,8 @@ Playing with high amperage is dangerous! Both tail lights on at full red brightn
 
 # Reading (optional)
 * [NeoPixels UberGuide](https://learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels)
-* [Install Arduino IDE](https://www.arduino.cc/en/Guide/HomePage)
 * [Arduino bootloader](https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader/all)
+* [Loading a bootloader](https://learn.sparkfun.com/tutorials/pocket-avr-programmer-hookup-guide/all)
 
 # Components
 
