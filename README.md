@@ -7,6 +7,7 @@ DIY LEDS for your NSX
 2. A custom PCB can be made for about $30 from www.jlcpcb.com
 3. [Install Arduino IDE](https://www.arduino.cc/en/Guide/HomePage)
 4. Comfortable soldering with beginner skills.
+5. Read this guide three times or more. There's a lot of info and if you're confused, open an issue above and I will try to help you out.
 
 # Risks
 The NSX taillights are old, and so there is a real risk that you'll break something. The bolts that connect to the car are fragile, the acrylic lenses are prone to cracking, etc. Just know that it's a real possibility that something can go wrong. Proceed at your own risk. 
