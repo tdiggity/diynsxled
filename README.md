@@ -104,10 +104,11 @@ These connectors connect to the OEM connectors for a really clean install. The o
 Search google for opening up your tail light housing. You'll need to remove the gasket and electrical wiring and brake lamp detector box. 
 
 # Tail Light Prep
-You need to make two cuts to your tail lights
+You need to make these cuts to your tail lights. They are not visible if you decide to revert back to stock:
+
 1. In the brake light area, there is a strip of plastic that comes flush to the rest of the light. This needs to be cut down. 
 2. Next to the strip that you just cut, you'll need to make a small hole for the screw terminal to fit through. Save this step for when you test fit the 3d printed brackets and leds. 
-
+3. Reverse light area, make two cuts so let the led panel sit flush.
 tbd - include images of cuts
 
 
@@ -164,13 +165,15 @@ tbd
 tbd
 
 
-# Put 3D printed parts in tail lights
-Test mount the 3d printed brackets in the tail light with the led panels. If everything fits, first glue the 3d printed brackets to the tail lights with some superglue and/or hot glue. Once that sets, use hotglue on the tabs and attach the led panels. Super glue and hot glue don't conduct electricity.
+# Test fit parts in tail lights
+Test mount the 3d printed brackets in the tail light with the led panels. Ensure that the panels fit flush. They should slide in easily. If not, you might need to shave off some more of the cuts you previously made. 
+
+If everything fits, first glue the 3d printed brackets to the tail lights with some superglue and/or hot glue. Once that sets, use hotglue on the tabs and attach the led panels. Super glue and hot glue don't conduct electricity.
 
 Tip: Ensure that the brackets are flush with the border of the tail lights. Hot glue sets quickly enough for you to get them  lined up well. 
 
 # Loading the arduino code
-For testing - open the test file in the test/ folder and upload it using the arduino IDE. 
+For testing - open the test file in the `test/` folder and upload it using the arduino IDE. 
 For driving use - open the diynsxled.ino file and upload it using the arduino IDE. 
 
 ### Advanced - use the AVR programmer to load the code
