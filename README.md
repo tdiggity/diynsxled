@@ -45,12 +45,12 @@ If you're familiar with digikey and mouser, you can order a lot of these parts f
 |  [DC power supply](https://www.amazon.com/gp/product/B071RNT1CD?tag=diynsxled-20) | 1 | optional, great for testing with or use a spare car battery |  |
 |  [Socket adapters DIP](https://www.amazon.com/QLOUNI-122Pcs-2-54mm-Sockets-Adaptor/dp/B07CJ87NVT?tag=diynsxled-20) | 1 | Optional [1x6pin, 1x16pin] | For chips from digikey |
 |  [Stacking headers for Nano](https://www.amazon.com/Shield-Stacking-Header-Arduino-Pack/dp/B0756KRCFX?tag=diynsxled-20) | 1 |  |  |
-|  [Arduino Nano (Brand name)](https://www.amazon.com/Arduino-A000005-ARDUINO-Nano/dp/B0097AU5OU?tag=diynsxled-20) | 1 |  | Brand name. Knock off just as good.|
-|  [Arduino Nano (china)](https://www.amazon.com/ATmega328P-Microcontroller-Board-Cable-Arduino/dp/B00NLAMS9C?tag=diynsxled-20) | 1 |  |  |
+|  [Arduino Nano (Brand name)](https://www.amazon.com/Arduino-A000005-ARDUINO-Nano/dp/B0097AU5OU?tag=diynsxled-20) | 1 | optional (pick this or 3rd party) | Brand name. 3rd party just as good.|
+|  [Arduino Nano (china)](https://www.amazon.com/ATmega328P-Microcontroller-Board-Cable-Arduino/dp/B00NLAMS9C?tag=diynsxled-20) | 1 | optional  |  |
 |  [AVR Programmer](https://www.amazon.com/gp/product/B004G54E9I?tag=diynsxled-20) | 1 | Optional |  |
 |  [Turn Signal Bulbs](https://www.amazon.com/gp/product/B07DFYSM5J?tag=diynsxled-20) | 1 | Optional |  |
 |  [Load resistor](https://www.amazon.com/Resistors-Signal-License-Warning-Cancellor-x/dp/B004EDF8HY/ref=sr_1_8?tag=diynsxled-20) | 1 | Optional |  |
-|  [5 wire connector](https://www.amazon.com/Wago-222-415-LEVER-NUTS-Conductor-Connectors/dp/B07CN5974J?tag=diynsxled-20) | 1 | 5, optional | There are better ways to splice wires together |
+|  [5 wire connector](https://www.amazon.com/Wago-222-415-LEVER-NUTS-Conductor-Connectors/dp/B07CN5974J?tag=diynsxled-20) | 1 | 5, optional | There are better ways to splice wires |  
 |  [Morimoto Butyl](https://www.amazon.com/RetroRubber-Grade-Butyl-Headlight-Sealant/dp/B01N5PM29J?tag=diynsxled-20) | 1 |  |  |
 
 **Note that the Amazon links have an affiliate link attached to them. This helps me recoupe some of the cost of development, and future dev work.* 
