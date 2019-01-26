@@ -5,7 +5,7 @@ DIY LEDS for your NSX
 # Pre-requisites
 1. A 3D printer is required to print the brackets and enclosure
 2. A custom PCB can be made for about $30 from www.jlcpcb.com
-3. Familiarize yourself with Arduino programming
+3. Familiarize yourself with using the Arduino IDE
 4. Comfortable soldering with beginner skills.
 
 # Risks
@@ -155,6 +155,22 @@ tbd
 tbd 
 ## Car to PCB
 tbd
+
+# Loading the arduino code
+For testing - open the test file in the test/ folder and upload it using the arduino IDE. 
+For driving use - open the diynsxled.ino file and upload it using the arduino IDE. 
+
+### Advanced - use the AVR programmer to load the code
+The Arduino is only on when the key is in ACC position (2nd key position and also when engine is on). Otherwise it is off and not using any power.
+
+In stock form, it takes about 1-2 seconds before any code can be run when first powering up. WHen the car is running, the Arduino is always on, so there is no worry of delay. 
+
+When the Arduino is off, the LEDS will not work correctly in certain cases because the arduino does not have power long enough to get past the startup stage:
+* When the emergency lights are on
+* If you have a security system that blinks the leds upon activation/deactivation. 
+
+This can be fixed by using an AVR programmer to remove the 1-2 second delay and instantly execute the LED program. Follow the instructions here: [AVR Guide](https://learn.sparkfun.com/tutorials/pocket-avr-programmer-hookup-guide/all) pay attention to the "Programming with Arduino" section.
+
 
 # Testing (pre-flight)
 Load the test code, and let it run overnight to break-in the LED panels. 
