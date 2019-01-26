@@ -50,7 +50,7 @@ If you're familiar with digikey and mouser, you can order a lot of these parts f
 |  [18 ga wire pack](https://www.amazon.com/gp/product/B00N51OO7Q?tag=diynsxled-20) | 1 | optional if you have wire |  |
 |  [Crimp tool](https://www.amazon.com/gp/product/B00OMM4YUY?tag=diynsxled-20) | 1 | optional, use with the cycle terminal crimps |  |
 |  [Plug connectors](https://www.amazon.com/gp/product/B07DB7X9R9?tag=diynsxled-20) | 1 | optional | I prefer the ones from CycleTerminal, but you can also use these.|
-|  [DC power supply](https://www.amazon.com/gp/product/B071RNT1CD?tag=diynsxled-20) | 1 | optional, great for testing with or use a spare car battery |  |
+|  [Benchtop DC power supply](https://www.amazon.com/gp/product/B071RNT1CD?tag=diynsxled-20) | 1 | optional, great for testing with or use a spare car battery |  |
 |  [Socket adapters DIP](https://www.amazon.com/QLOUNI-122Pcs-2-54mm-Sockets-Adaptor/dp/B07CJ87NVT?tag=diynsxled-20) | 1 | Optional [1x6pin, 1x16pin] | For chips from digikey |
 |  [Stacking headers for Nano](https://www.amazon.com/Shield-Stacking-Header-Arduino-Pack/dp/B0756KRCFX?tag=diynsxled-20) | 1 |  |  |
 |  [Arduino Nano (Brand name)](https://www.amazon.com/Arduino-A000005-ARDUINO-Nano/dp/B0097AU5OU?tag=diynsxled-20) | 1 | optional (pick this or 3rd party) | Brand name. 3rd party just as good.|
@@ -173,7 +173,14 @@ This can be fixed by using an [AVR programmer](https://www.amazon.com/gp/product
 
 
 # Testing (pre-flight)
-Load the test code, and let it run overnight to break-in the LED panels. 
+Load the test code in the `tests/` folder. The first time you run the test code, let them run for a few hours or overnight. If you're using the [Benchtop DC power supply](https://www.amazon.com/gp/product/B071RNT1CD?tag=diynsxled-20), this won't be a problem. If using a car battery, i'm not sure how long they will last. But something is better than nothing. It's been said that if an electrical thing will fail, it'll fail earlier rather than later. 
+
+It's advised to do testing at various stages to check your wiring:
+* After all terminals and wires soldered, but before glueing panels together
+* After brake panels are glued together
+* After mounting into taillights but before sealing
+* After sealing
+
 
 # Sealing your lights
 Use morimoto butyl
