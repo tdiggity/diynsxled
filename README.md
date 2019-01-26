@@ -74,7 +74,7 @@ If you're familiar with digikey and mouser, you can order a lot of these parts f
 
 ### Aliexpress
 * The LED panels are cheapest on Aliexpress. With regards to quality issues, I feel that all the panels i've bought have for the most part been great. Only 2 died on me, and I think that had more to do with me than them. In any case, purchasing extras might be good insurance since they take awhile to ship. 
-* In total, you need 12 panels, 65mm square. The name branded NeoPixel panels from AdaFruit are 71mm.....do not use those unless you want to update the STL files.
+* In total, you need 14 panels, 65mm square. The name branded NeoPixel panels from AdaFruit are 71mm.....do not use those unless you want to update the STL files.
 * The White panels are used for the reverse light area. You can opt to use all black led panels, too.
 
 |  Component | QTY Needed | Actual items needed | Notes |
