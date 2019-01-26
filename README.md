@@ -169,7 +169,7 @@ When the Arduino is off, the LEDS will not work correctly in certain cases becau
 * When the emergency lights are on
 * If you have a security system that blinks the leds upon activation/deactivation. 
 
-This can be fixed by using an AVR programmer to remove the 1-2 second delay and instantly execute the LED program. Follow the instructions here: [AVR Guide](https://learn.sparkfun.com/tutorials/pocket-avr-programmer-hookup-guide/all) pay attention to the "Programming with Arduino" section.
+This can be fixed by using an [AVR programmer](https://www.amazon.com/gp/product/B004G54E9I?tag=diynsxled-20) to remove the 1-2 second delay and instantly execute the LED program. Follow the instructions here: [AVR Guide](https://learn.sparkfun.com/tutorials/pocket-avr-programmer-hookup-guide/all) (pay attention to the "Programming with Arduino" section.)
 
 
 # Testing (pre-flight)
