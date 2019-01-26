@@ -30,7 +30,7 @@ The instructions below can be a bit overwelming. The high level steps are as fol
 6. Wiring - Car to PCB Harness
 7. Wiring - PCB to LED Panels Harness
 8. Put brackets and leds in tail light
-9. Test before sealing
+9. Test before sealing with car's wiring
 10. Seal tail lights
 11. Connect wiring
 
