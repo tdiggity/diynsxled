@@ -52,6 +52,7 @@ If you're familiar with digikey and mouser, you can order a lot of these parts f
 |  [Load resistor](https://www.amazon.com/Resistors-Signal-License-Warning-Cancellor-x/dp/B004EDF8HY/ref=sr_1_8?tag=diynsxled-20) | 1 | Optional |  |
 |  [5 wire connector](https://www.amazon.com/Wago-222-415-LEVER-NUTS-Conductor-Connectors/dp/B07CN5974J?tag=diynsxled-20) | 1 | 5, optional | There are better ways to splice wires |  
 |  [Morimoto Butyl](https://www.amazon.com/RetroRubber-Grade-Butyl-Headlight-Sealant/dp/B01N5PM29J?tag=diynsxled-20) | 1 |  |  |
+|  [M2/M3 bolts and nuts](https://www.amazon.com/gp/product/B07CSSVRPL?tag=diynsxled-20) | 1 | 6xM2, 10xM3 |  |
 
 **Note that the Amazon links have an affiliate link attached to them. This helps me recoupe some of the cost of development, and future dev work.* 
 
@@ -96,7 +97,26 @@ The parts are easy to print. However, you should use ABS. PETG might work, but p
 Search google for opening up your tail light housing
 
 # PCB and Soldering
-Use the gerber zip file and send it to www.jlcpcb.com to get made
+
+The holes will guide you. If it doesn't fit, you have the wrong part. 
+
+Misc notes:
+1. 5mm pins are used with the biggest holes in the voltage regulator. Only the center two on each end need to be soldered. 
+2. The DIP sockets on the two chips are optional, but allow you to change the chips out if they get damaged without having to desolder everything. 
+3. The nano uses header pins to easy connect and disconnect. There are 15 pins on each side. On my board, I only had 14 pin stacking headers, so my last row of pins near the usb is not used but that's ok because no connections are there. 
+4. PCB uses M2 screws to mount to enclosure. 
+
+<img width="100" height="100" src="https://github.com/tdiggity/diynsxled/blob/master/pics/pcb_annotated.png?raw=true">
+
+Notes about image:
+* Red boxes - Diode orientation matters
+* Red dot - Note grey strip on capacitor
+* Blue dots - These note pin 1 of the chip, usually a notch or dot on the chip
+* Yellow arrow - Voltage In to Voltage Out
+
+
+tbd - insert resistor diagram here
+  
 
 # Wiring guide
 ## LED panels
