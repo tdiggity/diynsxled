@@ -94,14 +94,14 @@ void loop() {
     reverseOn = false;
   }
 
-  //right turnsignal
+  //left turnsignal
   if (pinState_driver_ts == 1) {
     driverTurnsignalOn = true;
   } else {
     driverTurnsignalOn = false;
   }
   
-  //left turnsignal
+  //right turnsignal
   if (pinState_passenger_ts == 1) {
     passengerTurnsignalOn = true;
   } else {
