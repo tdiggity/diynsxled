@@ -26,10 +26,10 @@ If you're familiar with digikey and mouser, you can order a lot of these parts f
 ### Custom Components
 * Download the gerber zip file and send it to www.jlcpcb.com to get made. You get 10 for the same price, good if you mess up or for a group buy.
 * Print the 3D printed parts in the `stl/` directory.
-** For tail light pieces, only drivers side is included. Use your slicer to mirror the brake and turn signal brackets for the passenger side. The reverse light bracket can be used on either side.
-** The parts are easy to print and do not require supports or anything special. 
-** Print with ABS. PETG should work, but ABS if you can.
-** In your slicer, split the parts up for the enclosure and print individually (and for bulb mount if using that).
+  * For tail light pieces, only drivers side is included. Use your slicer to mirror the brake and turn signal brackets for the passenger side. The reverse light bracket can be used on either side.
+  * The parts are easy to print and do not require supports or anything special. 
+  * Print with ABS. PETG should work, but ABS if you can.
+  * In your slicer, split the parts up for the enclosure and print individually (and for bulb mount if using that).
 
 
 ### Amazon
