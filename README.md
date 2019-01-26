@@ -2,7 +2,7 @@
 
 DIY LEDS for your NSX
 
-# Pre-requisites
+# Prerequisites
 1. A 3D printer is required to print the brackets and enclosure
 2. A custom PCB can be made for about $30 from www.jlcpcb.com
 3. [Install Arduino IDE](https://www.arduino.cc/en/Guide/HomePage)
@@ -17,6 +17,22 @@ Playing with high amperage is dangerous! Both tail lights on at full red brightn
 # Reading (optional)
 * [NeoPixels UberGuide](https://learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels)
 * [Arduino bootloader](https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader/all) for instant start up time.
+
+# 10,000 foot summary
+
+The instructions below can be a bit overwelming. The high level steps are as follows:
+
+1. Gather all the components, 3d printed parts and pcb.
+2. Open tail lights and make cuts for led panels
+3. Solder the pcb components
+4. Wire the led together
+5. Test led wiring
+6. Wiring - Car to PCB Harness
+7. Wiring - PCB to LED Panels Harness
+8. Put brackets and leds in tail light
+9. Test before sealing
+10. Seal tail lights
+11. Connect wiring
 
 # Components
 
