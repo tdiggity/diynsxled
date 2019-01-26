@@ -60,6 +60,7 @@ If you're familiar with digikey and mouser, you can order a lot of these parts f
 |  [5 wire connector](https://www.amazon.com/Wago-222-415-LEVER-NUTS-Conductor-Connectors/dp/B07CN5974J?tag=diynsxled-20) | 1 | 5, optional | There are better ways to splice wires |  
 |  [Morimoto Butyl](https://www.amazon.com/RetroRubber-Grade-Butyl-Headlight-Sealant/dp/B01N5PM29J?tag=diynsxled-20) | 1 |  |  |
 |  [M2/M3 bolts and nuts](https://www.amazon.com/gp/product/B07CSSVRPL?tag=diynsxled-20) | 1 | 6xM2, 10xM3 |  |
+|  [Jumper wires](https://www.amazon.com/gp/product/B005TZJ0AM?tag=diynsxled-20) | 1 | optional | These will make wiring the panels together easier. We only need the short 4.7in ones.. |
 
 **Note that the Amazon links have an affiliate link attached to them. This helps me recoupe some of the cost of development, and future dev work.* 
 
