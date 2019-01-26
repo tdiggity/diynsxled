@@ -133,7 +133,10 @@ Notes about image:
 
 
 tbd - insert resistor diagram here
-  
+Resistors
+* 465 ohm - R11, R12
+* 1k ohm - R10, 20, 30, 40, 50
+* 4.7k ohm - R6, R7, R8, R9, R100
 
 # Wiring guide
 ## LED panels
