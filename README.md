@@ -24,6 +24,14 @@ The component list links to websites for the number of items you would need to o
 
 If you're familiar with digikey and mouser, you can order a lot of these parts from there, too. However, some things were more expensive. 
 
+### Custom Components
+* Download the gerber zip file and send it to www.jlcpcb.com to get made. You get 10 for the same price, good if you mess up or for a group buy.
+* Print the 3D printed parts in the /stl directory. 
+** The parts are easy to print and do not require supports or anything special. 
+** Print with ABS. PETG should work, but ABS if you can.
+** In your slicer, split the parts up for the enclosure and print individually (and for bulb mount if using that).
+
+
 ### Amazon
 * When installing LEDs, you'll get fast blinking turnsignals unless you use load resistors or the bulb sockets (both are listed as optional, pick one if you want regular speed blinking).
 * The AVR programmer is optional, explained later on, but allows the Arduino to be programmed to wake up instantly without delay. 
@@ -35,7 +43,7 @@ If you're familiar with digikey and mouser, you can order a lot of these parts f
 |  [2.5mm terminals 3P pack](https://www.amazon.com/Simpo-Terminal-300v10a-Drawing-Drawing/dp/B018OTAKJO?tag=diynsxled-20) | 1 | 28 |  |
 |  [Capacitor](https://www.amazon.com/gp/product/B01DYJEHZ2?tag=diynsxled-20) | 1 |  |  |
 |  [5A diode](https://www.amazon.com/gp/product/B079KCWPWQ?tag=diynsxled-20) | 1 | 6 |  |
-|  [Resistors](https://www.amazon.com/gp/product/B072BL2VX1?tag=diynsxled-20) | 1 | 2x450, 5x4.7k, 5x1k |  |
+|  [Resistors](https://www.amazon.com/gp/product/B072BL2VX1?tag=diynsxled-20) | 1 | 2x465, 5x4.7k, 5x1k |  |
 |  [18ga Wire red](https://www.amazon.com/gp/product/B000HACYOS?tag=diynsxled-20) | 1 | optional if you have wire |  |
 |  [18 ga Wire black](https://www.amazon.com/gp/product/B003J699RW?tag=diynsxled-20) | 1 | optional if you have wire |  |
 |  [18 ga Wire green](https://www.amazon.com/gp/product/B003J65A84?tag=diynsxled-20) | 1 | optional if you have wire |  |
